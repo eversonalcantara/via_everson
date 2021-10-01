@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("cenario.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/cenario.feature");
 formatter.feature({
   "comments": [
     {
@@ -7,233 +7,114 @@ formatter.feature({
     }
   ],
   "line": 2,
-  "name": "Busca de CEP",
-  "description": "\nEu como usuário do site dos correios\nQuero buscar um cep ou um Endereço\nDe modo que eu possa buscar CEPs através de um endereço ou Endereços a partir de um CEP\n\nParametros necessários para busca:\n- CEP ou Endereço\n\nParâmetro opcional para pesquisa de endereço\n- Opção de pesquisa por palavras semelhantes\n\t- Sim ou Não\n\nFiltros para tipo:\n- Localidades/Logradouro\n- CEP promocional\n- Caixa Postal Comunitária\n- Grande usuário\n- Unidade operacional \n- Todos",
-  "id": "busca-de-cep",
+  "name": "Carrinho",
+  "description": "\nEu como um cliente da Loja\nQuero realizar a inclusão de itens no carrinho\nDe modo que eu possa buscar visualizar as mensagens de que os itens foram adicionados com sucesso",
+  "id": "carrinho",
   "keyword": "Funcionalidade"
 });
 formatter.before({
-  "duration": 1040725133,
+  "duration": 13606291801,
   "status": "passed"
 });
 formatter.background({
-  "line": 23,
+  "line": 8,
   "name": "",
   "description": "",
   "type": "background",
   "keyword": "Contexto"
 });
 formatter.step({
-  "line": 24,
-  "name": "que eu esteja na home dos correios",
+  "line": 9,
+  "name": "que eu esteja na home da Loja",
   "keyword": "Dado "
 });
 formatter.step({
-  "line": 25,
-  "name": "eu clicar em busca CEP",
+  "line": 10,
+  "name": "eu clicar em Comprar",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 26,
-  "name": "devo visualizar a tela de Busca de CEP",
+  "line": 11,
+  "name": "devo visualizar a tela de Produtos",
   "keyword": "Então "
 });
 formatter.match({
-  "location": "BuscaCEPStepDefinitions.queEuEstejaNaHomeDosCorreios()"
+  "location": "CarrinhoStepDefinitions.queEuEstejaNaHomeDaLoja()"
 });
 formatter.result({
-  "duration": 197166439,
-  "status": "passed"
+  "duration": 6403655000,
+  "error_message": "java.lang.ExceptionInInitializerError\r\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)\r\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:574)\r\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:530)\r\n\tat cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.\u003cinit\u003e(LocalizedXStreams.java:50)\r\n\tat cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)\r\n\tat cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)\r\n\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\r\n\tat ✽.Dado que eu esteja na home da Loja(features/cenario.feature:9)\r\nCaused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not \"opens java.util\" to unnamed module @5034c75a\r\n\tat java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:357)\r\n\tat java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)\r\n\tat java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:177)\r\n\tat java.base/java.lang.reflect.Field.setAccessible(Field.java:171)\r\n\tat cucumber.deps.com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:39)\r\n\tat cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter.\u003cclinit\u003e(TreeMapConverter.java:50)\r\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)\r\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:574)\r\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:530)\r\n\tat cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.\u003cinit\u003e(LocalizedXStreams.java:50)\r\n\tat cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)\r\n\tat cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)\r\n\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\r\n",
+  "status": "failed"
 });
 formatter.match({
-  "location": "BuscaCEPStepDefinitions.euClicarEmBuscaCEP()"
+  "location": "CarrinhoStepDefinitions.euClicarEmComprar()"
 });
 formatter.result({
-  "duration": 1673846873,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "BuscaCEPStepDefinitions.devoVisualizarATelaDeBuscaDeCEP()"
+  "location": "CarrinhoStepDefinitions.devoVisualizarATelaDeProdutos()"
 });
 formatter.result({
-  "duration": 99939920,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
-  "line": 29,
-  "name": "Realizar Pesquisa com CEP válido",
+  "line": 14,
+  "name": "Realizar inclusão de dois produtos no carrinho",
   "description": "",
-  "id": "busca-de-cep;realizar-pesquisa-com-cep-válido",
+  "id": "carrinho;realizar-inclusão-de-dois-produtos-no-carrinho",
   "type": "scenario",
   "keyword": "Cenário",
   "tags": [
     {
-      "line": 28,
+      "line": 13,
       "name": "@OpenHome"
     }
   ]
 });
 formatter.step({
-  "line": 30,
-  "name": "eu entrar com os criterios de busca \"06130060\"",
+  "line": 15,
+  "name": "eu clicar no produto 1",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 31,
-  "name": "clicar no botao buscar",
+  "line": 16,
+  "name": "selecionar o tamanho e cor e clicar em comprar para o produto 2559",
   "keyword": "E "
 });
 formatter.step({
-  "line": 32,
-  "name": "devo visualizar a tela de Resultados",
+  "line": 17,
+  "name": "devo visualizar a mensagem de intem incluido no carrinho corretamente",
   "keyword": "Então "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "06130060",
-      "offset": 37
+      "val": "1",
+      "offset": 21
     }
   ],
-  "location": "BuscaCEPStepDefinitions.euEntrarComOsCriteriosDeBusca(String)"
+  "location": "CarrinhoStepDefinitions.euClicarNoProduto(int)"
 });
 formatter.result({
-  "duration": 134654393,
-  "status": "passed"
-});
-formatter.match({
-  "location": "BuscaCEPStepDefinitions.clicarNoBotaoBuscar()"
-});
-formatter.result({
-  "duration": 457611901,
-  "status": "passed"
-});
-formatter.match({
-  "location": "BuscaCEPStepDefinitions.devoVisualizarATelaDeResultados()"
-});
-formatter.result({
-  "duration": 87856488,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 843304575,
-  "status": "passed"
-});
-formatter.background({
-  "line": 23,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Contexto"
-});
-formatter.step({
-  "line": 24,
-  "name": "que eu esteja na home dos correios",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 25,
-  "name": "eu clicar em busca CEP",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 26,
-  "name": "devo visualizar a tela de Busca de CEP",
-  "keyword": "Então "
-});
-formatter.match({
-  "location": "BuscaCEPStepDefinitions.queEuEstejaNaHomeDosCorreios()"
-});
-formatter.result({
-  "duration": 60801009,
-  "status": "passed"
-});
-formatter.match({
-  "location": "BuscaCEPStepDefinitions.euClicarEmBuscaCEP()"
-});
-formatter.result({
-  "duration": 372181606,
-  "status": "passed"
-});
-formatter.match({
-  "location": "BuscaCEPStepDefinitions.devoVisualizarATelaDeBuscaDeCEP()"
-});
-formatter.result({
-  "duration": 59315711,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 35,
-  "name": "Realizar Pesquisa com filtro",
-  "description": "",
-  "id": "busca-de-cep;realizar-pesquisa-com-filtro",
-  "type": "scenario",
-  "keyword": "Cenário",
-  "tags": [
-    {
-      "line": 34,
-      "name": "@OpenHome"
-    }
-  ]
-});
-formatter.step({
-  "line": 36,
-  "name": "eu entrar com os criterios de busca \"Avenida Paes de Barros\"",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 37,
-  "name": "selecionar \"\"",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 38,
-  "name": "clicar no botao buscar",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 39,
-  "name": "devo visualizar a tela de Resultados",
-  "keyword": "Então "
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Avenida Paes de Barros",
-      "offset": 37
+      "val": "2559",
+      "offset": 62
     }
   ],
-  "location": "BuscaCEPStepDefinitions.euEntrarComOsCriteriosDeBusca(String)"
+  "location": "CarrinhoStepDefinitions.selecionarOTamanhoECorEClicarEmComprarParaOProduto(int)"
 });
 formatter.result({
-  "duration": 204744534,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "",
-      "offset": 12
-    }
-  ],
-  "location": "BuscaCEPStepDefinitions.selecionar(String)"
+  "location": "CarrinhoStepDefinitions.devoVisualizarAMensagemDeIntemIncluidoNoCarrinhoCorretamente()"
 });
 formatter.result({
-  "duration": 178234,
-  "status": "passed"
-});
-formatter.match({
-  "location": "BuscaCEPStepDefinitions.clicarNoBotaoBuscar()"
-});
-formatter.result({
-  "duration": 455995289,
-  "status": "passed"
-});
-formatter.match({
-  "location": "BuscaCEPStepDefinitions.devoVisualizarATelaDeResultados()"
-});
-formatter.result({
-  "duration": 64068571,
-  "status": "passed"
+  "status": "skipped"
 });
 });

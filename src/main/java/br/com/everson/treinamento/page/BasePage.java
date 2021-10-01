@@ -1,11 +1,11 @@
-package br.com.inmetrics.treinamento.page;
+package br.com.everson.treinamento.page;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-import br.com.inmetrics.treinamento.SingletonInstancePage;
-import br.com.inmetrics.treinamento.utils.WebDriverUtils;
+import br.com.everson.treinamento.SingletonInstancePage;
+import br.com.everson.treinamento.utils.WebDriverUtils;
 
 public class BasePage {
 	
@@ -68,10 +68,15 @@ public class BasePage {
 		return elemento.isEnabled();
 	}
 	
-	protected void clicarPorNome(String name) {
-		WebDriverUtils.aguardaElementoAparecerPorNome(name);
-		WebElement elemento = driver.findElementByName(name);
-		elemento.click();
+	protected void clicarPorNome(String name) throws Exception {
+		try {
+			WebDriverUtils.aguardaElementoAparecerPorNome(name);
+			WebElement elemento = driver.findElementByName(name);
+			elemento.click();
+			
+		} catch (Exception e) {
+			throw new Exception("Não foi possível clicar em" + name, e);
+		}
 	}
 
 	protected void clicarPorXPath(String xpath) {
@@ -90,5 +95,5 @@ public class BasePage {
 		WebElement element = driver.findElementByName(name);
 		new Select(element).selectByValue(itemValue);
 	}
-	
+
 }

@@ -1,21 +1,16 @@
-package br.com.inmetrics.treinamento.pagefactory;
+package br.com.everson.treinamento.pagefactory;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import br.com.inmetrics.treinamento.utils.WebDriverUtils;
+import br.com.everson.treinamento.utils.WebDriverUtils;
 
 public class BasePageFactory {
 	
 	protected boolean contemElemento(WebElement elemento) throws Exception {
-		try {
-			
-			WebDriverUtils.aguardaElementoAparecer(elemento);
-			if (!elemento.equals(null)) {
-				return true;
-			}
-		} catch (Exception e) {
-			throw new Exception("O elemento: " + elemento + " não foi encontrado", e);
+		WebDriverUtils.aguardaElementoAparecer(elemento);
+		if (!elemento.equals(null)) {
+			return true;
 		}
 		return false;
 	}

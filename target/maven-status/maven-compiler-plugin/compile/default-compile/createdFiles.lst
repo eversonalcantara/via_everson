@@ -1,0 +1,15 @@
+br\com\everson\treinamento\utils\RegexUtils.class
+com\everson\exceptions\ValorNaoIniciadoException.class
+br\com\everson\treinamento\utils\WebDriverUtils.class
+br\com\everson\treinamento\SingletonInstancePage.class
+com\everson\exceptions\AssertFailException.class
+br\com\everson\treinamento\utils\SeleniumAuxiliares.class
+com\everson\exceptions\MassaExcelException.class
+br\com\everson\treinamento\pagefactory\LoginPage.class
+br\com\everson\treinamento\enumerator\EnumTipoCEP.class
+br\com\everson\treinamento\pagefactory\BuscaCEPPageFactory.class
+com\everson\exceptions\TesteFalhouException.class
+br\com\everson\treinamento\page\HomePage.class
+br\com\everson\treinamento\page\TelaProdutos.class
+br\com\everson\treinamento\page\BasePage.class
+br\com\everson\treinamento\pagefactory\BasePageFactory.class

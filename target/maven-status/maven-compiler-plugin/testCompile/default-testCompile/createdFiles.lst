@@ -1,0 +1,5 @@
+br\com\everson\treinamento\stepdefinitions\CarrinhoStepDefinitions.class
+br\com\everson\treinamento\test\StandardJunitTest.class
+br\com\everson\treinamento\testpagefactory\StandardJunitTestWithPageFactory.class
+br\com\everson\treinamento\runner\CucumberRunnerTest.class
+br\com\everson\treinamento\commons\TestBase.class

@@ -1,5 +1,5 @@
-/Users/inmetrics/eclipse-workspace/treinamento/src/test/java/br/com/inmetrics/treinamento/PrimeiroTest.java
-/Users/inmetrics/eclipse-workspace/treinamento/src/test/java/br/com/inmetrics/treinamento/runner/RunnerTest.java
-/Users/inmetrics/eclipse-workspace/treinamento/src/test/java/br/com/inmetrics/treinamento/ContextoCenarioBuscaCep.java
-/Users/inmetrics/eclipse-workspace/treinamento/src/test/java/br/com/inmetrics/treinamento/TestBase.java
-/Users/inmetrics/eclipse-workspace/treinamento/src/test/java/br/com/inmetrics/treinamento/stepdefinitions/BuscaCEPStepDefinitions.java
+D:\Automação\git\treinamento\src\test\java\br\com\everson\treinamento\testpagefactory\StandardJunitTestWithPageFactory.java
+D:\Automação\git\treinamento\src\test\java\br\com\everson\treinamento\stepdefinitions\CarrinhoStepDefinitions.java
+D:\Automação\git\treinamento\src\test\java\br\com\everson\treinamento\commons\TestBase.java
+D:\Automação\git\treinamento\src\test\java\br\com\everson\treinamento\test\StandardJunitTest.java
+D:\Automação\git\treinamento\src\test\java\br\com\everson\treinamento\runner\CucumberRunnerTest.java

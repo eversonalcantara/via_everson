@@ -1,13 +1,15 @@
-package br.com.inmetrics.treinamento.utils;
+package br.com.everson.treinamento.utils;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import br.com.inmetrics.treinamento.SingletonInstancePage;
+import br.com.everson.treinamento.SingletonInstancePage;
 
 public class WebDriverUtils {
 
@@ -40,6 +42,10 @@ public class WebDriverUtils {
 	public static void aguardaElementoAparecerByXpath(String xpath) {
 		WebDriverWait wait = new WebDriverWait(driver, timeout);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
+	}
+	
+	public static void getScreenShot() {
+		((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	}
 	
 }

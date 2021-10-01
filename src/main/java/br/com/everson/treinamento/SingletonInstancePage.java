@@ -1,4 +1,4 @@
-package br.com.inmetrics.treinamento;
+package br.com.everson.treinamento;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -8,11 +8,12 @@ public class SingletonInstancePage {
     private ChromeDriver driver;
 
     private SingletonInstancePage(){
-
+    	newInstanceBrowser();
     }
 
-    public ChromeDriver openBrowser() {
-        driver = new ChromeDriver();
+    public ChromeDriver newInstanceBrowser() {
+    	System.setProperty("webdriver.chrome.driver","d:\\Automação\\git\\chromedriver.exe");
+    	driver = new ChromeDriver();
         return driver;
     }
     
